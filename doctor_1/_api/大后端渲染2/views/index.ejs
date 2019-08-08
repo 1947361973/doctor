@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script>
+      document.onclick=function(){
+        alert(1)
+      }
+    </script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+    <div><%= b %></div>
+    <div><%= detail.a %></div>
+    <div>arr:<%= arr %></div>
+    <% var a = 12 %>
+    <div><%= a %></div>
+
+    <ul>
+    <% for(var i=0; i< arr.length;i++){ %>
+      <li><%= arr[i] %></li>
+    <% } %>
+  </ul>
+
+  <hr>
+  <div><%= s %></div>
+  <div><%- s %></div>
+  </body>
+</html>
